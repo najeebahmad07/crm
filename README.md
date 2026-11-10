@@ -3,77 +3,136 @@
 # 🚀 Modern Open-Source CRM Application
 ### High-Performance Self-Hosted Business Management Platform • Version 1.0
 
-[![Version](https://img.shields.io/badge/Version-1.0-6366f1.svg?style=for-the-badge)](https://github.com/)
+[![Version](https://img.shields.io/badge/Version-1.0-6366f1.svg?style=for-the-badge)](https://github.com/najeebahmad07/crm)
 [![PHP](https://img.shields.io/badge/PHP-8.1%20%7C%208.2-777bb4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
 [![Framework](https://img.shields.io/badge/Framework-CodeIgniter-ee4326.svg?style=for-the-badge&logo=codeigniter&logoColor=white)](https://codeigniter.com/)
 [![Database](https://img.shields.io/badge/Database-MySQL%20%7C%20MariaDB-4479a1.svg?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![License](https://img.shields.io/badge/License-MIT-10b981.svg?style=for-the-badge)](LICENSE)
-[![Developer](https://img.shields.io/badge/Developed%20By-Najeeb-4f46e5.svg?style=for-the-badge)](https://github.com/)
+[![Developer](https://img.shields.io/badge/Developed%20By-Najeeb-4f46e5.svg?style=for-the-badge)](https://github.com/najeebahmad07)
 
 <br />
 
-**A full-featured, self-hosted enterprise Customer Relationship Management (CRM) application with modern UI styling, prominent sidebar navigation, and streamlined workflow management.**
+**A complete, self-hosted, enterprise-grade Customer Relationship Management (CRM) application with a modern UI, prominent sidebar navigation, and streamlined workflow management.**
 
-[Key Features](#-key-features) • [Screenshot](#-dashboard-preview) • [Installation Guide](#-installation-guide) • [Folder Structure](#-directory-structure) • [License](#-credits--license)
+[Screenshots Gallery](#-screenshots-gallery) • [Features A to Z](#-features-a-to-z) • [Installation Guide](#-installation-guide) • [Directory Structure](#-directory-structure) • [License](#-credits--license)
 
 </div>
 
 ---
 
-## 📸 Dashboard Preview
+## 📸 Screenshots Gallery
 
 <div align="center">
 
-![Modern CRM Dashboard Preview](screenshots/dashboard.jpg)
+### 1. 🔒 Authentication & Login Portal
+*Glassmorphic card design with ambient background mesh, floating rounded inputs, and secure authentication.*
 
-*Modern dashboard featuring prominent sidebar icons, quick KPI stat cards, financial overview, and task management.*
+![Login Screen](screenshots/01_login.png)
+
+<br />
+
+### 2. 📊 Executive Admin Dashboard
+*Prominent sidebar icons, quick KPI cards with colored gradient badges, financial summaries, and task widgets.*
+
+![Admin Dashboard](screenshots/02_dashboard.png)
+
+<br />
+
+### 3. 👥 Customer Management
+*Full client directory with contacts, statements, projects, invoices, and dedicated client portal.*
+
+![Customers Directory](screenshots/03_customers.png)
+
+<br />
+
+### 4. 🎯 Leads & Sales Pipeline
+*Visual Kanban pipeline for tracking leads, conversion stages, and automated lead capture.*
+
+![Leads Pipeline](screenshots/04_leads.png)
+
+<br />
+
+### 5. 💰 Invoices & Billing
+*Multi-currency invoicing, payment tracking, automated recurring cycles, and instant PDF generation.*
+
+![Invoices Management](screenshots/05_invoices.png)
+
+<br />
+
+### 6. 📑 Estimates & Quotations
+*Professional quotation builder with client approval tracking and instant one-click invoice conversion.*
+
+![Estimates Management](screenshots/06_estimates.png)
+
+<br />
+
+### 7. 📝 Proposals & Contracts
+*Interactive digital proposals with online client feedback, acceptance, and electronic signatures.*
+
+![Proposals Management](screenshots/07_proposals.png)
+
+<br />
+
+### 8. 📁 Project Management
+*Comprehensive project workspace featuring milestones, task breakdown, file sharing, and discussion threads.*
+
+![Projects Management](screenshots/08_projects.png)
+
+<br />
+
+### 9. ⏱️ Tasks & Timesheet Tracking
+*Kanban and table task views with built-in time tracking, checklists, and billable hour recording.*
+
+![Tasks Management](screenshots/09_tasks.png)
+
+<br />
+
+### 10. 🎫 Support Ticket Helpdesk
+*Multi-department ticket routing, email piping, SLA management, and canned responses.*
+
+![Support Tickets](screenshots/10_support_tickets.png)
+
+<br />
+
+### 11. 📈 Financial Reports & Business Analytics
+*Real-time profit & loss analytics, tax reports, sales summaries, and staff performance metrics.*
+
+![Financial Reports](screenshots/11_reports.png)
 
 </div>
 
 ---
 
-## 🌟 Key Features
+## 🚀 Features A to Z
 
-### 👥 Customer & Contact Management
-* **Comprehensive Client Dossier**: Centralize customer records, communication logs, billing history, and active projects.
-* **Dedicated Client Portal**: Secure client interface allowing customers to review proposals, pay invoices online, track tickets, and upload project files.
-* **Multiple Contacts**: Manage multiple points of contact per client account with custom role-based permissions.
-
-### 🎯 Leads & Sales Pipeline
-* **Kanban Pipeline**: Visual drag-and-drop board for tracking leads across stages.
-* **Web-to-Lead Forms**: Easily embed customizable lead generation forms on your websites.
-* **One-Click Conversion**: Convert qualified leads directly into active customer accounts.
-
-### 💰 Invoicing, Estimates & Payments
-* **Multi-Currency Invoicing**: Generate professional invoices with automatic tax and discount calculations.
-* **Online Payment Integration**: Pre-configured support for popular online payment gateways and offline bank transfers.
-* **Recurring Billing**: Automate subscriptions and recurring invoicing schedules.
-* **Estimates to Invoices**: Convert accepted client estimates into invoices with a single click.
-
-### 📁 Project & Task Management
-* **Milestone Tracking**: Break down large deliverables into structured milestones.
-* **Integrated Time Tracking**: Built-in stopwatch timers to track billable work and push recorded hours to client invoices.
-* **Gantt & Kanban Views**: Visualize project roadmaps and team workload distribution.
-
-### 📝 Contracts & Digital Proposals
-* **Interactive Proposals**: Create structured proposals with customizable item tables and client feedback.
-* **Electronic Signatures**: Collect binding electronic signatures directly in the client portal.
-* **Contract Expiry Alerts**: Automated notifications before contracts require renewal.
-
-### 🎫 Support Ticket System
-* **Department Queues**: Route incoming tickets to appropriate support teams.
-* **Email Piping**: Automatically convert incoming customer emails into support tickets.
-* **Canned Responses & Internal Notes**: Streamline team communication and speed up resolutions.
-
-### 📈 Business Analytics & Reports
-* **Profit & Loss Analytics**: Real-time visual comparison of income and expenses.
-* **Tax Summaries**: Generate clear tax liability reports for financial accounting.
-* **Staff Performance Reports**: Monitor logged billable hours and completed tasks.
-
-### 🔒 Security & Extensibility
-* **Granular Role-Based Access (RBAC)**: Define precise permissions for administrators, project managers, and staff members.
-* **Two-Factor Authentication (2FA)**: Additional account security using Google Authenticator.
-* **Custom Fields System**: Extend any module with custom input fields without database alterations.
+| Letter | Feature | Description |
+| :---: | :--- | :--- |
+| **A** | **Authentication & 2FA** | Two-Factor Authentication via Google Authenticator, secure password resets, and session management. |
+| **B** | **Billing & Subscriptions** | Recurring invoice cycles, automated payment reminders, and multi-currency billing. |
+| **C** | **Customer 360° Portal** | Complete customer dossiers with contacts, invoices, estimates, files, and support history. |
+| **D** | **Dashboard & KPI Cards** | Multi-metric KPI cards, untruncated progress stats, and customizable dashboard widgets. |
+| **E** | **Estimates & E-Signatures** | Professional quotations convertible to invoices, and legally binding digital proposal signatures. |
+| **F** | **Financial Overview** | Real-time tracking of paid, unpaid, partially paid, and overdue client invoices. |
+| **G** | **GDPR Compliance** | Data export tools, right-to-be-forgotten customer removal, and consent logs. |
+| **H** | **Helpdesk & Tickets** | Department ticket queues, internal staff notes, priority flags, and SLA monitoring. |
+| **I** | **Invoicing & PDF Engine** | Auto-generate branded PDF invoices and send direct payment links to clients. |
+| **J** | **Job & Task Scheduling** | Automated background Cron jobs for billing, reminder emails, and database maintenance. |
+| **K** | **Kanban Boards** | Visual drag-and-drop boards for both Leads pipeline management and Task tracking. |
+| **L** | **Leads Management** | Web-to-lead form generation, lead scoring, activity logs, and one-click customer conversion. |
+| **M** | **Milestones & Projects** | Granular project roadmaps, Gantt timelines, file repositories, and team assignments. |
+| **N** | **Notifications System** | Real-time desktop alerts, browser push notifications, and automated email dispatches. |
+| **O** | **Online Payment Gateways** | Integrated support for Stripe, PayPal, Mollie, Authorize.net, and offline bank transfer. |
+| **P** | **Proposals & Contracts** | Rich-text proposal builder with client review comments and contract expiry warnings. |
+| **Q** | **Quick Actions Menu** | Global top bar navigation for quickly adding tasks, invoices, leads, or customers from any screen. |
+| **R** | **Role-Based Access Control** | Granular staff permissions: restrict viewing, editing, or deleting by module and department. |
+| **S** | **Sidebar Modern UI** | Prominent `34px` rounded icon containers with micro-interactions and smooth active pills. |
+| **T** | **Timesheet Tracking** | In-app live stopwatch for tracking billable hours and automatically billing them to projects. |
+| **U** | **Uploads & File Sharing** | Secure attachment vault for contracts, customer documents, project files, and ticket media. |
+| **V** | **Version 1.0 Stability** | Clean, optimized CodeIgniter core architecture with isolated custom CSS overrides. |
+| **W** | **Web-to-Lead Forms** | Embeddable lead capture forms with custom styling and auto-assignment rules. |
+| **X** | **XML / CSV Data Exports** | Export customer tables, invoices, payments, and expenses to Excel, CSV, and PDF formats. |
+| **Y** | **Yearly & Periodic Reports** | Detailed sales charts, expense breakdowns, and staff performance analytics. |
+| **Z** | **Zero Monthly Fees** | Completely open-source, self-hosted, and free from subscription fees or vendor lock-in. |
 
 ---
 
@@ -89,9 +148,9 @@
 
 ## 🛠️ Installation Guide
 
-### Option 1: Local Setup (XAMPP / WAMP / LAMP)
+### Option 1: Local Installation (XAMPP / WAMP / LAMP)
 
-1. **Clone or Download the Repository:**
+1. **Clone the Repository:**
    ```bash
    git clone https://github.com/najeebahmad07/crm.git c:\xampp\htdocs\crm
    ```
@@ -101,12 +160,12 @@
    * Start **Apache** and **MySQL**.
 
 3. **Create Database:**
-   * Open `http://localhost/phpmyadmin` in your browser.
-   * Create a new database named `crm` (Collation: `utf8mb4_unicode_ci`).
+   * Open `http://localhost/phpmyadmin` in your web browser.
+   * Create a new database named `crm` with collation `utf8mb4_unicode_ci`.
 
 4. **Configure Database Credentials:**
    * Copy `application/config/app-config-sample.php` to `application/config/app-config.php`.
-   * Open `application/config/app-config.php` and configure your local settings:
+   * Open `application/config/app-config.php` and configure:
      ```php
      define('APP_BASE_URL', 'http://localhost/crm/');
 
@@ -114,27 +173,27 @@
      define('APP_DB_USERNAME', 'root');
      define('APP_DB_PASSWORD', '');
      define('APP_DB_NAME', 'crm');
-     define('APP_ENC_KEY', 'your-random-32-char-encryption-key-here');
+     define('APP_ENC_KEY', 'your-random-32-character-secret-key-here');
      ```
 
-5. **Access the CRM:**
-   * Open your browser and navigate to:
+5. **Launch the Application:**
+   * Navigate to:
      ```
-     http://localhost/crm/admin/
+     http://localhost/crm/admin/authentication
      ```
 
 ---
 
-### Option 2: Linux / VPS Server (Ubuntu / Nginx / Apache)
+### Option 2: Production Server (Ubuntu / Linux VPS)
 
-1. **Clone to Web Root:**
+1. **Clone into Web Root:**
    ```bash
    cd /var/www/
    git clone https://github.com/najeebahmad07/crm.git crm
    cd crm
    ```
 
-2. **Set File & Folder Permissions:**
+2. **Configure Folder Permissions:**
    ```bash
    chown -R www-data:www-data /var/www/crm
    chmod -R 755 /var/www/crm
@@ -143,7 +202,7 @@
    chmod -R 777 /var/www/crm/application/config
    ```
 
-3. **Apache VirtualHost Configuration (`/etc/apache2/sites-available/crm.conf`):**
+3. **Apache VirtualHost (`/etc/apache2/sites-available/crm.conf`):**
    ```apache
    <VirtualHost *:80>
        ServerName crm.yourdomain.com
@@ -157,7 +216,7 @@
    </VirtualHost>
    ```
 
-4. **Nginx Server Block Configuration (`/etc/nginx/sites-available/crm`):**
+4. **Nginx Server Block (`/etc/nginx/sites-available/crm`):**
    ```nginx
    server {
        listen 80;
@@ -180,14 +239,14 @@
 
 ## ⏱️ Cron Job Configuration
 
-To automate recurring invoices, overdue notifications, and support ticket checks, configure a server Cron job:
+To automate recurring invoices, task reminders, overdue payment notices, and support email parsing, configure a recurring Cron job on your server:
 
 ```bash
-# Run every 5 minutes
+# Run every 5 minutes (Recommended)
 */5 * * * * php /var/www/crm/index.php cron/index
 ```
 
-Or through cPanel Cron Jobs:
+Or via cPanel:
 ```
 wget -q -O- https://yourdomain.com/crm/cron/index >/dev/null 2>&1
 ```
@@ -213,24 +272,24 @@ crm/
 │   ├── js/                 # Client and admin interactive scripts
 │   └── plugins/            # DataTables, Chart.js, FontAwesome, etc.
 ├── modules/                # Modular extension directory
-├── screenshots/            # Showcase images and dashboard previews
-│   └── dashboard.jpg       # Dashboard preview screenshot
+├── screenshots/            # Showcase images and UI previews
+│   ├── 01_login.png
+│   ├── 02_dashboard.png
+│   ├── 03_customers.png
+│   ├── 04_leads.png
+│   ├── 05_invoices.png
+│   ├── 06_estimates.png
+│   ├── 07_proposals.png
+│   ├── 08_projects.png
+│   ├── 09_tasks.png
+│   ├── 10_support_tickets.png
+│   └── 11_reports.png
 ├── uploads/                # User avatars and attachments
 ├── .gitignore              # Git repository ignore rules
 ├── LICENSE                 # MIT Open Source License
 ├── README.md               # Documentation and showcase guide
 └── index.php               # Application entrypoint
 ```
-
----
-
-## 🎨 UI Architecture
-
-All custom styling rules, modern sidebar icon styling, and card layouts are centralized in:
-
-[`assets/css/custom.css`](assets/css/custom.css)
-
-This clean separation ensures core controllers, models, and application logic remain standard, clean, and reliable while giving full styling flexibility.
 
 ---
 
