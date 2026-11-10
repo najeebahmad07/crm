@@ -1,0 +1,924 @@
+/* ==========================================================================
+   PERFEX CRM - MODERN 2026 DESIGN THEME
+   Developed By Najeeb • Version 1.0
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --crm-font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --crm-primary: #4f46e5;
+  --crm-primary-hover: #4338ca;
+  --crm-primary-light: #eef2ff;
+  --crm-primary-gradient: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  --crm-bg-body: #f8fafc;
+  --crm-bg-card: #ffffff;
+  --crm-border-color: #e2e8f0;
+  --crm-border-light: rgba(226, 232, 240, 0.85);
+  --crm-text-heading: #0f172a;
+  --crm-text-body: #334155;
+  --crm-text-muted: #64748b;
+  --crm-radius-card: 18px;
+  --crm-radius-btn: 10px;
+  --crm-radius-input: 10px;
+  --crm-radius-pill: 9999px;
+  --crm-shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+  --crm-shadow-md: 0 4px 14px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -2px rgba(15, 23, 42, 0.03);
+  --crm-shadow-lg: 0 12px 28px -6px rgba(15, 23, 42, 0.08), 0 4px 10px -2px rgba(15, 23, 42, 0.03);
+  --crm-shadow-primary: 0 4px 14px 0 rgba(79, 70, 229, 0.32);
+}
+
+/* --------------------------------------------------------------------------
+   GLOBAL RESET & TYPOGRAPHY
+   -------------------------------------------------------------------------- */
+body {
+  font-family: var(--crm-font-sans) !important;
+  color: var(--crm-text-body) !important;
+  background-color: var(--crm-bg-body) !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--crm-font-sans) !important;
+  color: var(--crm-text-heading) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Smooth Modern Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* --------------------------------------------------------------------------
+   MODERN SIDEBAR & SETUP MENU (2026 DESIGN WITH BIGGER ICONS)
+   -------------------------------------------------------------------------- */
+.sidebar,
+#menu,
+#setup-menu-wrapper {
+  background: #ffffff !important;
+  border-right: 1px solid var(--crm-border-color) !important;
+  box-shadow: 2px 0 16px -4px rgba(15, 23, 42, 0.04) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+[dir="rtl"] .sidebar,
+[dir="rtl"] #menu,
+[dir="rtl"] #setup-menu-wrapper {
+  border-right: none !important;
+  border-left: 1px solid var(--crm-border-color) !important;
+  box-shadow: -2px 0 16px -4px rgba(15, 23, 42, 0.04) !important;
+}
+
+/* Sidebar User Profile */
+.sidebar-user-profile {
+  margin: 74px 12px 14px 12px !important;
+}
+
+.sidebar-user-profile a.profile {
+  background: #f8fafc !important;
+  border: 1px solid var(--crm-border-color) !important;
+  border-radius: 14px !important;
+  padding: 10px 12px !important;
+  box-shadow: var(--crm-shadow-sm) !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.sidebar-user-profile a.profile:hover,
+.sidebar-user-profile a.profile:focus {
+  background: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: var(--crm-shadow-md) !important;
+  transform: translateY(-1px);
+}
+
+.sidebar-user-profile img.staff-profile-image-small {
+  border-radius: 10px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) !important;
+  width: 38px !important;
+  height: 38px !important;
+  object-fit: cover !important;
+}
+
+/* Sidebar Navigation Items */
+.sidebar ul.nav#side-menu,
+#setup-menu {
+  margin-top: 8px !important;
+  padding: 0 4px !important;
+}
+
+.sidebar > ul.nav > li,
+#setup-menu > li {
+  border-left: none !important;
+  margin: 3px 6px !important;
+}
+
+[dir="rtl"] .sidebar > ul.nav > li,
+[dir="rtl"] #setup-menu > li {
+  border-right: none !important;
+}
+
+.sidebar ul.nav li a,
+#setup-menu li a {
+  color: #475569 !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  padding: 9px 12px !important;
+  border-radius: 12px !important;
+  border: 1px solid transparent !important;
+  display: flex !important;
+  align-items: center !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  background: transparent !important;
+}
+
+/* BIGGER MODERN SIDEBAR ICONS (USER REQUIREMENT) */
+.sidebar ul.nav li a i.menu-icon,
+#setup-menu li a i.menu-icon {
+  font-size: 18px !important;
+  min-width: 34px !important;
+  width: 34px !important;
+  height: 34px !important;
+  line-height: 34px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 10px !important;
+  margin-right: 12px !important;
+  background: rgba(241, 245, 249, 0.9) !important;
+  color: #64748b !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  float: none !important;
+  flex-shrink: 0 !important;
+}
+
+[dir="rtl"] .sidebar ul.nav li a i.menu-icon,
+[dir="rtl"] #setup-menu li a i.menu-icon {
+  margin-right: 0 !important;
+  margin-left: 12px !important;
+}
+
+.sidebar ul.nav li a .menu-text,
+#setup-menu li a .menu-text {
+  flex: 1 1 auto !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* Sidebar Menu Hover */
+.sidebar > ul.nav > li:hover > a:first-child,
+.sidebar ul.nav > li > a:hover,
+.sidebar ul.nav > li > a:focus,
+#setup-menu > li:hover > a:first-child,
+#setup-menu li > a:hover {
+  background: #f1f5f9 !important;
+  color: var(--crm-text-heading) !important;
+  transform: translateX(3px) !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+[dir="rtl"] .sidebar > ul.nav > li:hover > a:first-child,
+[dir="rtl"] .sidebar ul.nav > li > a:hover,
+[dir="rtl"] #setup-menu > li:hover > a:first-child {
+  transform: translateX(-3px) !important;
+}
+
+.sidebar > ul.nav > li:hover > a:first-child i.menu-icon,
+.sidebar ul.nav > li > a:hover i.menu-icon,
+.sidebar ul.nav > li > a:focus i.menu-icon,
+#setup-menu > li:hover > a:first-child i.menu-icon,
+#setup-menu li > a:hover i.menu-icon {
+  background: #e0e7ff !important;
+  color: var(--crm-primary) !important;
+  transform: scale(1.08) !important;
+}
+
+/* Sidebar Menu Active State (High Impact Gradient) */
+.sidebar > ul.nav > li.active > a:first-child,
+.sidebar ul.nav li.active > a,
+#setup-menu > li.active > a:first-child,
+#setup-menu li.active > a {
+  background: var(--crm-primary-gradient) !important;
+  color: #ffffff !important;
+  box-shadow: var(--crm-shadow-primary) !important;
+  border: 1px solid transparent !important;
+  border-radius: 12px !important;
+}
+
+.sidebar > ul.nav > li.active > a:first-child i.menu-icon,
+.sidebar ul.nav li.active > a i.menu-icon,
+.sidebar ul.nav li.active > a .menu-icon,
+#setup-menu > li.active > a:first-child i.menu-icon,
+#setup-menu li.active > a i.menu-icon {
+  background: rgba(255, 255, 255, 0.22) !important;
+  color: #ffffff !important;
+  transform: scale(1.05) !important;
+}
+
+.sidebar > ul.nav > li.active > a:first-child .menu-text,
+.sidebar ul.nav li.active > a .menu-text,
+#setup-menu > li.active > a:first-child .menu-text,
+#setup-menu li.active > a .menu-text {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.sidebar ul.nav li.active > a .arrow,
+#setup-menu ul.nav li.active > a .arrow {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Sidebar Badges */
+.sidebar ul.nav li a .badge,
+#setup-menu li a .badge {
+  border-radius: var(--crm-radius-pill) !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  padding: 3px 8px !important;
+  line-height: 1.3 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Sidebar Submenus */
+.sidebar ul.nav li .nav-second-level,
+#setup-menu li .nav-second-level {
+  padding: 6px 0 6px 14px !important;
+  margin: 4px 10px 6px 24px !important;
+  border-left: 2px solid var(--crm-border-color) !important;
+  background: transparent !important;
+}
+
+[dir="rtl"] .sidebar ul.nav li .nav-second-level,
+[dir="rtl"] #setup-menu li .nav-second-level {
+  padding: 6px 14px 6px 0 !important;
+  margin: 4px 24px 6px 10px !important;
+  border-left: none !important;
+  border-right: 2px solid var(--crm-border-color) !important;
+}
+
+.sidebar ul.nav li .nav-second-level li a,
+#setup-menu li .nav-second-level li a {
+  padding: 7px 12px !important;
+  margin: 2px 0 !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #64748b !important;
+  border-radius: 8px !important;
+}
+
+.sidebar ul.nav li .nav-second-level li a:hover,
+.sidebar ul.nav li .nav-second-level li a:focus,
+#setup-menu li .nav-second-level li a:hover {
+  background: #f1f5f9 !important;
+  color: var(--crm-text-heading) !important;
+  transform: translateX(2px) !important;
+}
+
+.sidebar ul.nav li .nav-second-level li.active a,
+#setup-menu li .nav-second-level li.active a {
+  color: var(--crm-primary) !important;
+  background: var(--crm-primary-light) !important;
+  font-weight: 600 !important;
+}
+
+.sidebar ul.nav li .nav-second-level a .menu-icon,
+#setup-menu li .nav-second-level a .menu-icon {
+  font-size: 15px !important;
+  width: 22px !important;
+  height: 22px !important;
+  line-height: 22px !important;
+  margin-right: 8px !important;
+  background: transparent !important;
+}
+
+/* Sidebar Credit Badge */
+.sidebar-credit-badge {
+  background: #fcfdfe;
+  border-top: 1px solid var(--crm-border-color) !important;
+}
+
+/* --------------------------------------------------------------------------
+   MODERN HEADER NAVIGATION
+   -------------------------------------------------------------------------- */
+#header {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border-bottom: 1px solid var(--crm-border-color) !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03) !important;
+  height: 60px !important;
+}
+
+#header .hide-menu {
+  margin-top: 15px !important;
+  padding: 6px 8px !important;
+  border-radius: 10px !important;
+  background: #f1f5f9 !important;
+  transition: all 0.2s ease !important;
+}
+
+#header .hide-menu:hover {
+  background: #e2e8f0 !important;
+  color: var(--crm-text-heading) !important;
+}
+
+/* Top Search Bar */
+#top_search input#search_input {
+  border-radius: var(--crm-radius-pill) !important;
+  background: #f1f5f9 !important;
+  border: 1px solid transparent !important;
+  height: 40px !important;
+  padding-left: 40px !important;
+  font-size: 13.5px !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+#top_search input#search_input:focus {
+  background: #ffffff !important;
+  border-color: var(--crm-primary) !important;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15) !important;
+  width: 380px !important;
+}
+
+#top_search #top_search_button {
+  top: 12px !important;
+  left: 12px !important;
+}
+
+/* Quick Actions + Button */
+.navbar-nav li.icon a span.tw-bg-primary-600 {
+  background: var(--crm-primary-gradient) !important;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.35) !important;
+  border-radius: 50% !important;
+  transition: all 0.2s ease !important;
+}
+
+.navbar-nav li.icon a:hover span.tw-bg-primary-600 {
+  transform: scale(1.08) !important;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.45) !important;
+}
+
+/* --------------------------------------------------------------------------
+   DASHBOARD SCREEN CARDS & WIDGETS (2026 DESIGN)
+   -------------------------------------------------------------------------- */
+#wrapper {
+  background-color: var(--crm-bg-body) !important;
+}
+
+.content {
+  padding: 28px !important;
+}
+
+/* Quick Stats Wrappers (Top Stat Cards) */
+.top_stats_wrapper {
+  background: #ffffff !important;
+  border: 1px solid var(--crm-border-light) !important;
+  border-radius: var(--crm-radius-card) !important;
+  padding: 20px 22px !important;
+  box-shadow: var(--crm-shadow-md) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  position: relative !important;
+}
+
+.top_stats_wrapper:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: var(--crm-shadow-lg) !important;
+  border-color: rgba(99, 102, 241, 0.3) !important;
+}
+
+/* Modern Gradient Stat Icons */
+.top_stats_wrapper .stat-icon-wrapper svg,
+.top_stats_wrapper svg {
+  border-radius: 12px !important;
+  padding: 8px !important;
+  width: 42px !important;
+  height: 42px !important;
+  transition: all 0.25s ease !important;
+  display: inline-block !important;
+}
+
+.quick-stats-invoices .stat-icon-wrapper svg,
+.quick-stats-invoices .top_stats_wrapper svg {
+  background: #eff6ff !important;
+  color: #2563eb !important;
+}
+
+.quick-stats-leads .stat-icon-wrapper svg,
+.quick-stats-leads .top_stats_wrapper svg {
+  background: #ecfdf5 !important;
+  color: #059669 !important;
+}
+
+.quick-stats-projects .stat-icon-wrapper svg,
+.quick-stats-projects .top_stats_wrapper svg {
+  background: #f5f3ff !important;
+  color: #7c3aed !important;
+}
+
+.quick-stats-tasks .stat-icon-wrapper svg,
+.quick-stats-tasks .top_stats_wrapper svg {
+  background: #fff7ed !important;
+  color: #ea580c !important;
+}
+
+.top_stats_wrapper:hover .stat-icon-wrapper svg,
+.top_stats_wrapper:hover svg {
+  transform: scale(1.08) !important;
+}
+
+/* Stat Numbers & Text */
+.top_stats_wrapper .stat-number,
+.top_stats_wrapper .tw-font-semibold {
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  color: var(--crm-text-heading) !important;
+  letter-spacing: -0.02em !important;
+}
+
+.top_stats_wrapper .stat-title,
+.top_stats_wrapper .tw-truncate {
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: #475569 !important;
+}
+
+/* Modern Sleek Progress Bars */
+.progress.progress-bar-mini {
+  height: 6px !important;
+  border-radius: var(--crm-radius-pill) !important;
+  background: #f1f5f9 !important;
+  box-shadow: none !important;
+  margin-top: 14px !important;
+  margin-bottom: 0 !important;
+  overflow: hidden !important;
+}
+
+.progress.progress-bar-mini .progress-bar {
+  border-radius: var(--crm-radius-pill) !important;
+  box-shadow: none !important;
+  transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.progress-bar-danger {
+  background: linear-gradient(90deg, #f43f5e 0%, #fb7185 100%) !important;
+}
+
+.progress-bar-success {
+  background: linear-gradient(90deg, #10b981 0%, #34d399 100%) !important;
+}
+
+.progress-bar-info {
+  background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%) !important;
+}
+
+.progress-bar-warning {
+  background: linear-gradient(90deg, #f59e0b 0%, #fbbf24 100%) !important;
+}
+
+/* General Panels & Card Widgets */
+.panel_s,
+.widget {
+  background: #ffffff !important;
+  border: 1px solid var(--crm-border-light) !important;
+  border-radius: var(--crm-radius-card) !important;
+  box-shadow: var(--crm-shadow-md) !important;
+  overflow: hidden !important;
+  margin-bottom: 24px !important;
+  transition: all 0.2s ease !important;
+}
+
+.panel_s:hover {
+  box-shadow: var(--crm-shadow-lg) !important;
+}
+
+.panel_s > .panel-body {
+  padding: 24px !important;
+}
+
+.panel_s > .panel-heading {
+  padding: 16px 24px !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  color: var(--crm-text-heading) !important;
+}
+
+/* Screen Options Button */
+.screen-options-btn {
+  background: #ffffff !important;
+  border: 1px solid var(--crm-border-color) !important;
+  border-radius: var(--crm-radius-pill) !important;
+  padding: 8px 18px !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  box-shadow: var(--crm-shadow-sm) !important;
+  color: #475569 !important;
+  transition: all 0.2s ease !important;
+}
+
+.screen-options-btn:hover {
+  background: #f8fafc !important;
+  color: var(--crm-primary) !important;
+  border-color: var(--crm-primary) !important;
+  box-shadow: var(--crm-shadow-md) !important;
+}
+
+/* Widget Dragger Handle */
+.widget-dragger {
+  opacity: 0.2 !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.widget:hover .widget-dragger {
+  opacity: 0.7 !important;
+}
+
+/* Horizontal Scrollable Tabs */
+.horizontal-scrollable-tabs .nav-tabs {
+  border-bottom: 1px solid var(--crm-border-color) !important;
+  display: flex !important;
+  gap: 6px !important;
+  padding-bottom: 8px !important;
+}
+
+.horizontal-scrollable-tabs .nav-tabs > li > a {
+  border: none !important;
+  border-radius: 10px !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  color: #64748b !important;
+  padding: 8px 16px !important;
+  transition: all 0.2s ease !important;
+  background: transparent !important;
+}
+
+.horizontal-scrollable-tabs .nav-tabs > li > a:hover {
+  background: #f1f5f9 !important;
+  color: var(--crm-text-heading) !important;
+}
+
+.horizontal-scrollable-tabs .nav-tabs > li.active > a {
+  background: var(--crm-primary-light) !important;
+  color: var(--crm-primary) !important;
+  font-weight: 600 !important;
+}
+
+.horizontal-scrollable-tabs .nav-tabs > li.active > a .menu-icon {
+  color: var(--crm-primary) !important;
+}
+
+/* --------------------------------------------------------------------------
+   DATA TABLES & LISTS
+   -------------------------------------------------------------------------- */
+.table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+}
+
+.table > thead > tr > th {
+  background: #f8fafc !important;
+  color: #64748b !important;
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  padding: 12px 16px !important;
+  border-top: none !important;
+  border-bottom: 1px solid var(--crm-border-color) !important;
+}
+
+.table > tbody > tr > td {
+  padding: 14px 16px !important;
+  vertical-align: middle !important;
+  border-top: 1px solid #f1f5f9 !important;
+  color: #334155 !important;
+  font-size: 13.5px !important;
+}
+
+.table > tbody > tr:hover > td {
+  background: #f8fafc !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  padding: 6px 12px !important;
+  border: 1px solid transparent !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: var(--crm-primary-gradient) !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.25) !important;
+}
+
+/* --------------------------------------------------------------------------
+   BUTTONS (MODERN 2026 PILL & ROUNDED STYLING)
+   -------------------------------------------------------------------------- */
+.btn {
+  border-radius: var(--crm-radius-btn) !important;
+  font-weight: 600 !important;
+  font-size: 13.5px !important;
+  padding: 8px 18px !important;
+  letter-spacing: -0.01em !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-primary {
+  background: var(--crm-primary-gradient) !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.28) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: linear-gradient(135deg, #4338ca 0%, #4f46e5 100%) !important;
+  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.4) !important;
+  transform: translateY(-1px) !important;
+  color: #ffffff !important;
+}
+
+.btn-default {
+  background: #ffffff !important;
+  border: 1px solid var(--crm-border-color) !important;
+  color: #334155 !important;
+  box-shadow: var(--crm-shadow-sm) !important;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+  background: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: var(--crm-text-heading) !important;
+  transform: translateY(-1px) !important;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%) !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.28) !important;
+}
+
+.btn-success:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.38) !important;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%) !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.28) !important;
+}
+
+.btn-danger:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.38) !important;
+}
+
+/* --------------------------------------------------------------------------
+   FORM CONTROLS & INPUTS
+   -------------------------------------------------------------------------- */
+.form-control {
+  border-radius: var(--crm-radius-input) !important;
+  border: 1px solid var(--crm-border-color) !important;
+  padding: 9px 14px !important;
+  font-size: 13.5px !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.02) inset !important;
+  background-color: #fcfdfe !important;
+  transition: all 0.2s ease !important;
+  height: auto !important;
+  min-height: 40px !important;
+}
+
+.form-control:focus {
+  background-color: #ffffff !important;
+  border-color: var(--crm-primary) !important;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15) !important;
+  outline: none !important;
+}
+
+label.control-label {
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  color: #475569 !important;
+}
+
+/* Bootstrap Select Dropdowns */
+.bootstrap-select .btn.dropdown-toggle {
+  border-radius: 10px !important;
+  border: 1px solid var(--crm-border-color) !important;
+  background: #ffffff !important;
+  min-height: 40px !important;
+  padding: 9px 14px !important;
+  font-weight: 500 !important;
+  box-shadow: var(--crm-shadow-sm) !important;
+}
+
+.bootstrap-select.open .btn.dropdown-toggle,
+.bootstrap-select .btn.dropdown-toggle:focus {
+  border-color: var(--crm-primary) !important;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15) !important;
+}
+
+/* --------------------------------------------------------------------------
+   BADGES & LABELS (PILL STYLE)
+   -------------------------------------------------------------------------- */
+.badge,
+.label {
+  border-radius: var(--crm-radius-pill) !important;
+  padding: 4px 10px !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+}
+
+.label-default {
+  background: #f1f5f9 !important;
+  color: #475569 !important;
+}
+
+.label-success {
+  background: #ecfdf5 !important;
+  color: #047857 !important;
+}
+
+.label-danger {
+  background: #fef2f2 !important;
+  color: #b91c1c !important;
+}
+
+.label-warning {
+  background: #fffbeb !important;
+  color: #b45309 !important;
+}
+
+.label-info {
+  background: #eff6ff !important;
+  color: #1d4ed8 !important;
+}
+
+/* --------------------------------------------------------------------------
+   MODALS & DROPDOWNS
+   -------------------------------------------------------------------------- */
+.modal-content {
+  border-radius: 20px !important;
+  border: 1px solid var(--crm-border-color) !important;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25) !important;
+  overflow: hidden !important;
+}
+
+.modal-header {
+  padding: 20px 24px !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+}
+
+.modal-footer {
+  padding: 16px 24px !important;
+  background: #f8fafc !important;
+  border-top: 1px solid #f1f5f9 !important;
+}
+
+.dropdown-menu {
+  border-radius: 14px !important;
+  border: 1px solid var(--crm-border-color) !important;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.1) !important;
+  padding: 6px !important;
+}
+
+.dropdown-menu > li > a {
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  transition: all 0.15s ease !important;
+}
+
+.dropdown-menu > li > a:hover {
+  background: #f1f5f9 !important;
+  color: var(--crm-text-heading) !important;
+}
+
+/* --------------------------------------------------------------------------
+   LOGIN / AUTHENTICATION PAGE (2026 NEXT-GEN DESIGN)
+   -------------------------------------------------------------------------- */
+body.login_admin,
+body.authentication {
+  background: radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.14) 0%, transparent 40%),
+              radial-gradient(circle at 85% 85%, rgba(168, 85, 247, 0.14) 0%, transparent 40%),
+              radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.08) 0%, transparent 50%),
+              linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%) !important;
+  min-height: 100vh !important;
+  position: relative !important;
+  overflow-x: hidden !important;
+}
+
+/* Ambient glow orbs behind the login card */
+body.login_admin::before,
+body.authentication::before {
+  content: '';
+  position: fixed;
+  top: 10%;
+  left: 20%;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.18) 0%, transparent 70%);
+  filter: blur(40px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+body.login_admin::after,
+body.authentication::after {
+  content: '';
+  position: fixed;
+  bottom: 10%;
+  right: 20%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.16) 0%, transparent 70%);
+  filter: blur(40px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.authentication-form-wrapper {
+  max-width: 440px !important;
+  z-index: 20 !important;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-radius: 24px !important;
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 20px 45px -15px rgba(15, 23, 42, 0.09), 0 0 0 1px rgba(226, 232, 240, 0.7) !important;
+  padding: 36px 32px !important;
+  transition: all 0.3s ease !important;
+}
+
+.login-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.12), 0 0 0 1px rgba(99, 102, 241, 0.25) !important;
+}
+
+.login_admin .form-control,
+.authentication .form-control {
+  border-radius: 12px !important;
+  height: 46px !important;
+  padding: 10px 16px !important;
+  font-size: 14px !important;
+}
+
+.login_admin .btn-primary,
+.authentication .btn-primary {
+  height: 46px !important;
+  font-size: 15px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35) !important;
+}
+
+.login_admin .btn-primary:hover,
+.authentication .btn-primary:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.45) !important;
+}
+
+/* --------------------------------------------------------------------------
+   FOOTERS (DEVELOPED BY NAJEEB • VERSION 1.0)
+   -------------------------------------------------------------------------- */
+.admin-footer {
+  margin-top: auto !important;
+  border-top: 1px solid var(--crm-border-color) !important;
+  background: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+}
+
+.login-footer {
+  position: relative !important;
+  z-index: 20 !important;
+}
+
+footer.footer {
+  border-top: 1px solid var(--crm-border-color) !important;
+  background: #ffffff !important;
+  padding: 20px 0 !important;
+}

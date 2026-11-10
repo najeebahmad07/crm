@@ -1,0 +1,29 @@
+# Environment & Database Configuration (Keep your DB password safe!)
+application/config/app-config.php
+
+# CodeIgniter Logs & Cache
+application/logs/log-*.php
+!application/logs/index.html
+application/cache/*
+!application/cache/index.html
+
+# Uploads & User Files (Keep repository clean)
+uploads/*
+!uploads/index.html
+!uploads/company/
+temp/*
+!temp/index.html
+
+# Dependencies & Package Managers
+/node_modules/
+/vendor/
+npm-debug.log
+yarn-error.log
+
+# IDE & OS Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
