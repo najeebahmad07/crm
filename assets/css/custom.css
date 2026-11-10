@@ -1,5 +1,5 @@
 /* ==========================================================================
-   PERFEX CRM - MODERN 2026 DESIGN THEME
+   MODERN CRM - MODERN DESIGN THEME
    Developed By Najeeb • Version 1.0
    ========================================================================== */
 
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* --------------------------------------------------------------------------
-   MODERN SIDEBAR & SETUP MENU (2026 DESIGN WITH BIGGER ICONS)
+   MODERN SIDEBAR & SETUP MENU (WITH BIGGER ICONS)
    -------------------------------------------------------------------------- */
 .sidebar,
 #menu,
@@ -374,7 +374,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* --------------------------------------------------------------------------
-   DASHBOARD SCREEN CARDS & WIDGETS (2026 DESIGN)
+   DASHBOARD SCREEN CARDS & WIDGETS
    -------------------------------------------------------------------------- */
 #wrapper {
   background-color: var(--crm-bg-body) !important;
@@ -630,7 +630,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* --------------------------------------------------------------------------
-   BUTTONS (MODERN 2026 PILL & ROUNDED STYLING)
+   BUTTONS (MODERN PILL & ROUNDED STYLING)
    -------------------------------------------------------------------------- */
 .btn {
   border-radius: var(--crm-radius-btn) !important;
@@ -817,7 +817,7 @@ label.control-label {
 }
 
 /* --------------------------------------------------------------------------
-   LOGIN / AUTHENTICATION PAGE (2026 NEXT-GEN DESIGN)
+   LOGIN / AUTHENTICATION PAGE (MODERN DESIGN)
    -------------------------------------------------------------------------- */
 body.login_admin,
 body.authentication {
